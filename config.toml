@@ -1,0 +1,5 @@
+baseURL = "https://cyberpunk2021.tech/"
+languageCode = "en-us"
+title = "Mondo reimagined for 2021"
+theme = "pico"
+

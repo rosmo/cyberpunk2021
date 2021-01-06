@@ -1,0 +1,32 @@
+<section id="hero" class="mt-8 mx-auto flex flex-wrap items-center">
+	<div
+		class="mx-auto p-2 sm:p-8 text-center {{ with .Params.hero_media }} md:pl-0 md:w-1/2 {{ else }} md:w-3/4 {{ end }}">
+		<div>
+			{{ .Content }}
+		</div>
+		<div class="mx-auto mt-8 mb-8 md:mb-0 flex justify-center">
+			{{ range .Params.btn }}
+			{{ $class := "border border-green-400 hover:text-white" }}
+			{{ if .primary }}
+			{{ $class = "bg-green-400 text-white"}}
+			{{ end }}
+
+			<a href="{{ .url | relLangURL }}" class="no-underline">
+				<div
+					class="px-4 py-2 mx-2 rounded-sm text-center hover:bg-green-500 active:bg-green-600 transition duration-300 ease-in-out {{ $class }}">
+					{{ .label }}
+				</div>
+			</a>
+
+			{{ end }}
+		</div>
+	</div>
+
+	{{ with .Params.hero_media }}
+	<div
+		class="my-6 p-4 mx-auto max-w-3/4 sm:max-w-2/3 md:max-w-1/2 lg:relative lg:-right-10 xl:-right-16 shadow-soft relative">
+		<img src="{{ . | relURL}}" alt="hero image" class="max-h-vh-3/4">
+	</div>
+	{{ end }}
+
+</section>

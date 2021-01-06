@@ -1,0 +1,24 @@
+{
+  "name": "cyberpunk2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cd themes/pico && npm install -g",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosmo/cyberpunk2021.git"
+  },
+  "keywords": [
+    "paska"
+  ],
+  "author": "Taneli Leppä",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rosmo/cyberpunk2021/issues"
+  },
+  "homepage": "https://github.com/rosmo/cyberpunk2021#readme",
+  "dependencies": {}
+}
