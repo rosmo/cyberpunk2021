@@ -113,6 +113,11 @@ h3 {
 	font-family: 'Inconsolata', monospace;
 }
 
+#intro a {
+	text-decoration: underline 2px dashed;
+	color:#cb0c59;
+}
+
 #pre_content {
 	width: 80%;
 	margin-left: 10%;
