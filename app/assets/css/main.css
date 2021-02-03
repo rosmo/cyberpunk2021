@@ -7,19 +7,15 @@ body {
 	background-color: #000;
 	color: #c2c2c2;
 	font-family: 'Monda', sans-serif;
-	font-size: 13px;
-	line-height: 48px;
+	font-size: 12pt;
+	line-height: 22pt;
 	overscroll-behavior: none;
 	z-index: -1;
 }
 
 a {
-	color: #ff0;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
+	color: #b8cb0c;
+	text-decoration: underline 1px dashed;
 }
 
 button {
@@ -43,14 +39,16 @@ a, button, input, select {
 
 hr {
 	border: 0px none;
-	border-top: 1px dashed #dd6bb0;
+	border-top: 1px dashed #cb0c59;
 }
 
 h1 {
-	color: #dd6bb0;
+	color: #cb0c59;
+	font-size: 26pt;
 }
 
 h3 {
+	font-size: 18pt;
 	color: #f2ed1f;
 }
 
@@ -88,8 +86,8 @@ h3 {
 
 #hardware_part, #software_part, #look_part {
 	margin-top: 5%;
-	font-size: 24px;
-	line-height: 36px;
+	font-size: 12pt;
+	line-height: 22pt;
 }
 
 #info {
@@ -108,7 +106,7 @@ h3 {
 }
 
 #intro {
-	font-size: 12pt;
+	font-size: 14pt;
 	line-height: 1.5em;g
 	color: #dad0c0;
 	font-family: 'Inconsolata', monospace;
