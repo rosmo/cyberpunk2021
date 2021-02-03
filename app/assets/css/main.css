@@ -109,7 +109,7 @@ h3 {
 
 #intro {
 	font-size: 12pt;
-	line-height: 1.5em;
+	line-height: 1.5em;g
 	color: #dad0c0;
 	font-family: 'Inconsolata', monospace;
 }
@@ -117,6 +117,7 @@ h3 {
 #intro a {
 	text-decoration: underline 2px dashed;
 	color:#cb0c59;
+	font-weight: bold;
 }
 
 #pre_content {
