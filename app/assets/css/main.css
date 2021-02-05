@@ -62,16 +62,8 @@ h3 {
 	color: #a19f68;
 }
 
-
-.title_image_container {
-	width: 100%;
-	height: 256px;
-}
-
 .title_image {
-	object-fit: none;
-	object-position: 0 75%;
-	height: 256px;
+	border-radius: 7px;
 }
 
 .footer {
@@ -107,7 +99,7 @@ h3 {
 
 #intro {
 	font-size: 14pt;
-	line-height: 1.5em;g
+	line-height: 1.5em;
 	color: #dad0c0;
 	font-family: 'Inconsolata', monospace;
 }
