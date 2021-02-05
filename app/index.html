@@ -3,6 +3,15 @@
 	<head>
 		<title>Cyberpunk reimagined for 2021</title>
 		<meta charset="utf-8">
+		<meta name="apple-mobile-web-app-title" content="Cyberpunk reimagined for 2021">
+		<meta name="application-name" content="Cyberpunk reimagined for 2021">
+		<meta name="description" content="Cyberpunk reimagined for 2021">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Cyberpunk reimagined for 2021">
+		<meta property="og:description" content="Cyberpunk reimagined for 2021">
+		<meta property="og:site_name" content="Cyberpunk reimagined for 2021">
+		<meta property="og:url" content="https://cyberpunk2021.tech/">
 		<base href=".">
 	
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -21,39 +30,20 @@
 		<link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">  
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="assets/libs/mfb.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-		<script src="assets/libs/mfb.min.js" async></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-		<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/main.min.css">
 	</head>
 	<body>
 
-		<ul id="menu" class="mfb-component--tl mfb-zoomin" data-mfb-toggle="hover">
-			<li class="mfb-component__wrap">
-			  <a href="#" class="mfb-component__button--main">
-				<i class="mfb-component__main-icon--resting material-icons">menu</i>
-				<i class="mfb-component__main-icon--active material-icons">close</i>
-			  </a>
-			  <ul class="mfb-component__list">
-				<li>
-				  <a href="#hardware_part" data-mfb-label="The hardware" class="mfb-component__button--child">
-					<i class="mfb-component__child-icon material-icons">devices_other</i>
-				  </a>
-				</li>
-				<li>
-				  <a href="#software_part" data-mfb-label="The software" class="mfb-component__button--child">
-					<i class="mfb-component__child-icon material-icons">security</i>
-				  </a>
-				</li>
-	  
-				<li>
-				  <a href="#look_part" data-mfb-label="The look" class="mfb-component__button--child">
-					<i class="mfb-component__child-icon material-icons">skateboarding</i>
-				  </a>
-				</li>
-			  </ul>
-			</li>
-		  </ul>
+		<nav id="nav">
+			<button class="nav-icon material-icons" id="nav-icon"><i class="material-icons">menu</i></button>
+			<ul>
+			  <li><a href="#">home</a></li>
+			  <li><a href="#hardware_part">hardware</a></li>
+			  <li><a href="#software_part">software</a></li>
+			  <li><a href="#look_part">look</a></li>
+			</ul>
+		  </nav>
 
 		<div id="info">
 			<p class="title">Cyberpunk <span>re</span>-imagined for</p>
@@ -395,7 +385,7 @@
 	
 		</div>
 
-		<script type="module" src="assets/js/main.js">
+		<script type="module" src="assets/js/main.min.js">
 		</script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
