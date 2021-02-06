@@ -19,19 +19,21 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="preconnect" href="https://ajax.googleapis.com">
 	
-		<link rel="preload" href="/three.js/scene/jsm/postprocessing/GlitchPass.js" as="script">
-		<link rel="preload" href="/three.js/scene/jsm/postprocessing/RenderPass.js" as="script">
-		<link rel="preload" href="/three.js/scene/jsm/postprocessing/EffectComposer.js" as="script">
-		<link rel="preload" href="/three.js/scene/jsm/postprocessing/ShaderPass.js" as="script">
-		<link rel="preload" href="/three.js/scene/jsm/shaders/VignetteShader.js" as="script">
-		<link rel="preload" href="/three.js/scene/jsm/objects/Sky.js" as="script">
-		<link rel="preload" href="/three.js/build/three.module.js" as="script">	
+		<link rel="preload" href="three.js/scene/jsm/postprocessing/GlitchPass.js" as="script">
+		<link rel="preload" href="three.js/scene/jsm/postprocessing/RenderPass.js" as="script">
+		<link rel="preload" href="three.js/scene/jsm/postprocessing/EffectComposer.js" as="script">
+		<link rel="preload" href="three.js/scene/jsm/postprocessing/ShaderPass.js" as="script">
+		<link rel="preload" href="three.js/scene/jsm/shaders/VignetteShader.js" as="script">
+		<link rel="preload" href="three.js/scene/jsm/objects/Sky.js" as="script">
+		<link rel="preload" href="three.js/build/three.module.js" as="script">
+		<link rel="preload" href="assets/js/popup.js" as="script">	
 	
 		<link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">  
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<link type="text/css" rel="stylesheet" href="assets/css/main.dev.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/popup.css">
 	</head>
 	<body>
 
@@ -96,7 +98,7 @@
 					<br>
 					<li>Input devices
 						<ul>
-							<li>Indiscreet: <a href="https://geni.us/FRVOQS" target="_blank" data-img="jelly_comb">Jelly Comb Dual Mode Bluetooth Folding Keyboard or Ultimate Hacking Keyboard</a></li>
+							<li>Indiscreet: <a href="https://geni.us/FRVOQS" target="_blank" data-img="jelly_comb">Jelly Comb Dual Mode Bluetooth Folding Keyboard</a></li>
 							<li><a href="https://ultimatehackingkeyboard.com/" target="_blank" data-img="ultimate_hacking_keyboard">Ultimate Hacking Keyboard</a></li>
 							<li><a href="https://geni.us/liW9KsP" target="_blank" data-img="tapstrap">Discreet: Tap Strap 2, ArcX ring</a></li>
 						</ul>
@@ -386,6 +388,37 @@
 
 		<script type="module" src="assets/js/main.dev.js">
 		</script>
+		
+		<script type="module" src="assets/js/popup.js">
+		</script>
+
+		<script>
+			$(document).ready(function() {
+				$('a[data-img!=""]').each(function(index, elem) {
+						var img = $(elem).attr('data-img');
+						var link = $(elem).attr('href');
+						if (typeof img === 'string')
+						{
+							var title = $(elem).text();
+							$(elem).magnificPopup({
+								'type': 'image',
+								'image': {
+									'titleSrc': function(item) {
+										return '<div class="see-button-box">' + title + '<br />' + '<a href="' + link + '" class="see-button" target="_blank">See the product</a></div>';
+									}
+								},
+								'closeOnContentClick': true,
+								'closeBtnInside': true,
+								'items': {
+									src: 'imgs/resized/' + img + '.png'			
+								}
+							});
+						}
+					}
+				);
+			});
+		</script>
+
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHV5N1TL0"></script>
