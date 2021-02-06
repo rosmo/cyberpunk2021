@@ -2,7 +2,9 @@
   width: 160px;
   height: 32px;
   background-color: #F2ED1F;
-  color: #000; 
+  color: #000;
+  padding: 4px;
+  border-radius: 4px;
 }
 .see-button-box {
   width: 100%;
